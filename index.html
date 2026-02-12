@@ -19,7 +19,7 @@
     --frost: #ECEAF6;
     --snow: #F7F6FC;
     --copper: #D4883A;
-    --gold: #E8A050;
+    --gold: #FFD100;
     --success: #2EA870;
     --alert: #D44A4A;
     --white: #FFFFFF;
@@ -132,7 +132,7 @@
     margin-bottom: 1.5rem;
     animation: fadeUp 0.8s ease both;
   }
-  .hero-badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--vivid-purple); }
+  .hero-badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
   .hero h1 {
     font-family: 'DM Serif Display', serif; font-size: 3.6rem;
     color: var(--midnight); line-height: 1.1; letter-spacing: -1.5px;
@@ -155,13 +155,13 @@
   }
   .btn-primary {
     display: inline-flex; align-items: center; gap: 0.5rem;
-    background: var(--royal-purple); color: var(--white);
+    background: var(--gold); color: var(--midnight);
     padding: 1rem 2rem; border-radius: 12px; text-decoration: none;
     font-weight: 600; font-size: 0.95rem; border: none; cursor: pointer;
     transition: all 0.25s ease;
-    box-shadow: 0 4px 20px rgba(61, 45, 140, 0.3);
+    box-shadow: 0 4px 20px rgba(255, 209, 0, 0.35);
   }
-  .btn-primary:hover { background: var(--vivid-purple); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(61, 45, 140, 0.35); }
+  .btn-primary:hover { background: #E6BC00; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(255, 209, 0, 0.4); }
   .btn-secondary {
     display: inline-flex; align-items: center; gap: 0.5rem;
     background: var(--white); color: var(--midnight);
@@ -194,21 +194,21 @@
 
   .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
   .hero-stat {
-    background: var(--frost); border-radius: 16px; padding: 1.5rem;
+    background: linear-gradient(135deg, var(--deep-violet) 0%, var(--royal-purple) 100%); border-radius: 16px; padding: 1.5rem;
     text-align: center;
   }
   .hero-stat-number {
     font-family: 'DM Serif Display', serif; font-size: 2rem;
-    color: var(--royal-purple); letter-spacing: -1px;
+    color: var(--gold); letter-spacing: -1px;
   }
-  .hero-stat-label { font-size: 0.78rem; color: var(--haze); margin-top: 0.25rem; font-weight: 500; }
+  .hero-stat-label { font-size: 0.78rem; color: var(--pewter); margin-top: 0.25rem; font-weight: 500; }
 
   .hero-floating-badge {
     position: absolute; top: -12px; right: -12px;
-    background: var(--vivid-purple); color: var(--white);
+    background: var(--gold); color: var(--midnight);
     padding: 0.6rem 1.2rem; border-radius: 50px;
     font-size: 0.78rem; font-weight: 600;
-    box-shadow: 0 4px 15px rgba(91, 68, 192, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 209, 0, 0.35);
     animation: float 3s ease-in-out infinite;
   }
 
@@ -457,12 +457,12 @@
   .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
   .btn-cta-primary {
     display: inline-flex; align-items: center; gap: 0.5rem;
-    background: var(--copper); color: var(--white);
+    background: var(--gold); color: var(--midnight);
     padding: 1.1rem 2.5rem; border-radius: 12px; text-decoration: none;
     font-weight: 600; font-size: 1rem; border: none; cursor: pointer;
-    transition: all 0.25s; box-shadow: 0 4px 20px rgba(212, 136, 58, 0.35);
+    transition: all 0.25s; box-shadow: 0 4px 20px rgba(255, 209, 0, 0.35);
   }
-  .btn-cta-primary:hover { background: var(--gold); transform: translateY(-2px); }
+  .btn-cta-primary:hover { background: #E6BC00; transform: translateY(-2px); }
   .btn-cta-secondary {
     display: inline-flex; align-items: center; gap: 0.5rem;
     background: transparent; color: var(--snow);
@@ -537,7 +537,7 @@
       <div class="nav-brand-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480"><defs><linearGradient id="nav-sf" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3D2D8C"/><stop offset="45%" stop-color="#3D2D8C"/><stop offset="75%" stop-color="#6E5CBF"/><stop offset="100%" stop-color="#C0B8D8"/></linearGradient><radialGradient id="nav-ig" cx="35%" cy="30%" r="70%"><stop offset="0%" stop-color="rgba(255,255,255,0.12)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></radialGradient></defs><path d="M 200 22 C 200 22, 290 22, 355 42 C 365 45, 372 55, 372 65 L 372 210 C 372 310, 280 400, 200 458 C 120 400, 28 310, 28 210 L 28 65 C 28 55, 35 45, 45 42 C 110 22, 200 22, 200 22 Z" fill="#FFFFFF"/><path d="M 200 42 C 200 42, 282 42, 340 60 C 347 62, 352 69, 352 76 L 352 210 C 352 300, 268 384, 200 436 C 132 384, 48 300, 48 210 L 48 76 C 48 69, 53 62, 60 60 C 118 42, 200 42, 200 42 Z" fill="url(#nav-sf)"/><path d="M 200 42 C 200 42, 282 42, 340 60 C 347 62, 352 69, 352 76 L 352 210 C 352 300, 268 384, 200 436 C 132 384, 48 300, 48 210 L 48 76 C 48 69, 53 62, 60 60 C 118 42, 200 42, 200 42 Z" fill="url(#nav-ig)"/></svg></div>
       <div>
         <div class="nav-brand-text">Rowe Insurance</div>
-        <div class="nav-brand-sub">Billings, Montana</div>
+        <div class="nav-brand-sub">People You Can Trust</div>
       </div>
     </a>
     <ul class="nav-links">
@@ -566,7 +566,7 @@
           <span class="hero-badge-dot"></span>
           Independent Insurance Agency — Billings, MT
         </div>
-        <h1>We compare rates<br>so you get <em>the best deal</em></h1>
+        <h1><em>People you can trust</em></h1>
         <p class="hero-desc">As an independent agency, we're not locked into one carrier. We shop 11+ top-rated insurers to find you the right coverage at the best price.</p>
         <div class="hero-actions">
           <a href="tel:4065348777" class="btn-primary">
